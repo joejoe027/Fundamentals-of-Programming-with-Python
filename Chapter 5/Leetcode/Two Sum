@@ -1,0 +1,22 @@
+Link: https://leetcode.com/problems/two-sum/description/
+
+Solution:
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+
+
+        complimentary = {}
+
+
+        for n in range(len(nums)):
+            current = target - nums[n]
+            if current in complimentary:
+                return [complimentary[current],n]
+            else:
+                complimentary[nums[n]] = n
