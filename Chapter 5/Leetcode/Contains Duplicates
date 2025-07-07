@@ -1,0 +1,18 @@
+Link: https://leetcode.com/problems/contains-duplicate/description/
+
+Solution:
+
+class Solution(object):
+    def containsDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        nums_set = set()
+       
+        for i in nums:
+            if i not in nums_set:
+                nums_set.add(i)
+            else:
+                return True
+        return False
