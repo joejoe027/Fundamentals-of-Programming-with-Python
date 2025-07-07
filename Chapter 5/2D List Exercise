@@ -1,0 +1,21 @@
+def diagonalSum(matrix):
+    sum = 0
+    for i in range(len(nums)):
+        sum += matrix[i][i]
+    return sum
+    
+def antiDiagonalSum(matrix):
+    sum = 0
+    for i in range(len(nums)):
+        sum += matrix[i][len(nums) - 1 - i]
+    return sum 
+    
+nums = [
+    [1,1,1],
+    [0,3,0],
+    [2,1,1]
+    ]
+    
+print(f"The sum of the diagonal is {diagonalSum(nums)}")
+print(f"The sum of the anti diagonal is {antiDiagonalSum(nums)}")
+
