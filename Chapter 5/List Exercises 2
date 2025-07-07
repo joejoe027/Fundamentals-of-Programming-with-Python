@@ -1,0 +1,33 @@
+todo_list = []
+
+while True:
+    if len(todo_list) == 0:
+        print("There are currently no tasks")
+        
+        print("1. Add a task")
+        print("2. Exit")
+        command = int(input("Enter a command: "))
+    else:
+        print("Here are your current tasks")
+        
+        print("--------------------")
+        for i in range(len(todo_list)):
+            print(f"{i + 1}. {todo_list[i]}")
+        print("--------------------")
+    
+        print("1. Add a task")
+        print("2. Delete a task")
+        print("3. Exit")
+        command = int(input("Enter a command: "))
+    
+    if command == 1:
+        task = input("Enter the task to be done: ")
+        todo_list.append(task)
+    elif command == 2 and len(todo_list) > 0:
+        delete_index = int(input("Enter task you want to delete: ")) - 1
+        
+        todo_list.pop(delete_index)
+    elif command == 2 and len(todo_list) == 0 or command == 3 and len(todo_list) > 0:
+        break
+    else:
+        print("Invalid Command")
