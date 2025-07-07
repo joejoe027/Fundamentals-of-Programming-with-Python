@@ -1,0 +1,18 @@
+Link: https://leetcode.com/problems/missing-number/description/
+
+Solution:
+
+class Solution(object):
+    def missingNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+
+
+        all_possible_nums = range(len(nums) + 1)
+        nums_set = set(nums)
+       
+        for num in all_possible_nums:
+            if num not in nums_set:
+                return num
