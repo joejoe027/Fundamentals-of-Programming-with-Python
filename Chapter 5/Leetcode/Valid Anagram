@@ -1,0 +1,36 @@
+Link: https://leetcode.com/problems/valid-anagram/description/
+
+Solution:
+
+class Solution(object):
+    def isAnagram(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        s_dict = {}
+        t_dict = {}
+
+
+        # count frequency of each letter in s
+        for i in s:
+            if i not in s_dict:
+                s_dict[i] = 0
+            else:
+                s_dict[i] += 1
+
+
+        # count frequency of each letter in t
+        for i in t:
+            if i not in t_dict:
+                t_dict[i] = 0
+            else:
+                t_dict[i] += 1
+
+
+        # check if s and t have the same frequency of each letter
+        if s_dict == t_dict:
+            return True
+        else:
+            return False
