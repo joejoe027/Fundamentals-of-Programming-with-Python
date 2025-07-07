@@ -1,0 +1,24 @@
+import random 
+
+# This function randomizes the students that are enrolled in each class and their grades
+def randomizeCourseEnrollment():
+    courses = {
+    "Math": [],
+    "Science": [],
+    "English": [],
+    "Gym": []
+    }
+    
+    student_names = ["Alex", "Tim", "Freddy", "John", "Mark", "Anne", "Julia", "Joe", "Sam", "Sarah", "Bob"]
+
+    for course in courses:
+        number_of_students = random.randint(3,7)  # Number of students to enroll
+        selected_students = random.sample(student_names, number_of_students)  # No duplicates
+    
+        for student in selected_students:
+            random_grade = random.randint(50, 101)
+            courses[course].append((student, random_grade))
+    
+    return courses
+
+courses = randomizeCourseEnrollment()
