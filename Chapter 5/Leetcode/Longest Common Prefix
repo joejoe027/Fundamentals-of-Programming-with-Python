@@ -1,0 +1,33 @@
+Link: https://leetcode.com/problems/longest-common-prefix/description/
+
+Solution:
+
+class Solution(object):
+    def longestCommonPrefix(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        if len(strs) == 0:
+            return ""
+
+
+        if len(strs) == 1:
+            return strs[0]
+
+
+        longest_str = ""
+        first_word = strs[0]
+
+
+        for i in range(len(first_word)):
+            substring = first_word[:i+1]
+            for word in strs:
+                if not word.startswith(substring):
+                    return longest_str
+            longest_str = substring
+
+
+        return longest_str
+
+
