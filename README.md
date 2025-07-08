@@ -19,6 +19,5 @@ Here is an brief overview of what you will do in this course:
 
 
 
-please fill out this survey so I can improve this course:
-https://docs.google.com/forms/d/1S5VWZc_yKJrh27y8C36Mxung479FLYLSGuo2rcl1ZOI/edit?usp=drivesdk
-
+Please fill out this survey so I can improve this course: 
+https://docs.google.com/forms/d/e/1FAIpQLSeXG0e4MPxzxBTWGP45qNhsG70reaTTjGOI0YMFiKR84tclPQ/viewform?usp=dialog
