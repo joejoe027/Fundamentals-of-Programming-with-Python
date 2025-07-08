@@ -16,3 +16,9 @@ Here is an brief overview of what you will do in this course:
    Project: Social Media Network Simulator, University Data Analysis
 6. Chapter 6 - Object Oriented Programming
    Project: Polynomial Calculator, Song Playlist Editor
+
+
+
+please fill out this survey so I can improve this course:
+https://docs.google.com/forms/d/1S5VWZc_yKJrh27y8C36Mxung479FLYLSGuo2rcl1ZOI/edit?usp=drivesdk
+
